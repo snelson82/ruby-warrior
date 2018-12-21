@@ -2,8 +2,8 @@
 # |@>|
 #  --
 
-description "You see before yourself a long hallway with stairs at the end. There is nothing in the way."
-tip "Call warrior.walk! to walk forward in the Player 'play_turn' method."
+description 'You see before yourself a long hallway with stairs at the end. There is nothing in the way.'
+tip 'Call warrior.walk! to walk forward in the Player \'play_turn\' method.'
 
 time_bonus 15
 ace_score 17

@@ -9,8 +9,8 @@ describe RubyWarrior::Abilities::Explode do
     @floor.add(@captive, 0, 0)
     @explode = RubyWarrior::Abilities::Explode.new(@captive)
   end
-  
-  it "should subtract 100 health from each unit on the floor" do
+
+  it 'should subtract 100 health from each unit on the floor' do
     unit = RubyWarrior::Units::Base.new
     unit.health = 20
     @floor.add(unit, 0, 1)
@@ -19,8 +19,8 @@ describe RubyWarrior::Abilities::Explode do
     @captive.health.should == -90
     unit.health.should == -80
   end
-  
-  it "should explode when bomb time reaches zero" do
+
+  it 'should explode when bomb time reaches zero' do
     @captive.health = 10
     @explode.time = 3
     @explode.pass_turn

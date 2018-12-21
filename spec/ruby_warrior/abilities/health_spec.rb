@@ -5,8 +5,8 @@ describe RubyWarrior::Abilities::Health do
     @warrior = RubyWarrior::Units::Warrior.new
     @health = RubyWarrior::Abilities::Health.new(@warrior)
   end
-  
-  it "should return the amount of health" do
+
+  it 'should return the amount of health' do
     @warrior.health = 10
     @health.perform.should == 10
   end

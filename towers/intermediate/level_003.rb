@@ -4,9 +4,9 @@
 # | C |
 #  ---
 
-description "You feel slime on all sides, you're surrounded!"
-tip "Call warrior.bind!(direction) to bind an enemy to keep him from attacking. Bound enemies look like captives."
-clue "Count the number of enemies around you. Bind an enemy if there are two or more."
+description 'You feel slime on all sides, you\'re surrounded!'
+tip 'Call warrior.bind!(direction) to bind an enemy to keep him from attacking. Bound enemies look like captives.'
+clue 'Count the number of enemies around you. Bind an enemy if there are two or more.'
 
 time_bonus 50
 ace_score 101

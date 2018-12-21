@@ -2,8 +2,8 @@
 # |>a S @|
 #  ------
 
-description "You feel a wall right in front of you and an opening behind you."
-tip "You are not as effective at attacking backward. Use warrior.feel.wall? and warrior.pivot! to turn around."
+description 'You feel a wall right in front of you and an opening behind you.'
+tip 'You are not as effective at attacking backward. Use warrior.feel.wall? and warrior.pivot! to turn around.'
 
 time_bonus 30
 ace_score 50

@@ -8,5 +8,5 @@ Before do
 end
 
 After do
-  FileUtils.rm_rf "towers/short"
+  FileUtils.rm_rf 'towers/short'
 end
