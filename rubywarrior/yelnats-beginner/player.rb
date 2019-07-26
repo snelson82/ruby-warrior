@@ -1,21 +1,25 @@
 class Player
+  HEALTH = 20
   def play_turn(warrior)
-    @health = warrior.health
-
-    case @ahead_of_me
-    when 'nothing'
-      if warrior.health == @health
-        warrior.rest!
-      elsif warrior.health < @health
-        warrior.walk!
-      else warrior.attack!
-      end
-    when 'captive'
-      warrior.rescue!
-    else
-      p @health
-      p warrior.feel
-    end
-    @health = warrior.health
+    @ahead_of_me = warrior.feel
+    puts @ahead_of_me
+    warrior.walk!
+    # case @ahead_of_me
+    # when 'nothing'
+    #   if warrior.health == HEALTH
+    #     puts 'walking'
+    #     warrior.walk!
+    #   elsif warrior.health < HEALTH
+    #     puts 'resting'
+    #     warrior.rest!
+    #   else
+    #     puts 'attacking'
+    #     warrior.attack!
+    #   end
+    # when 'captive'
+    #   warrior.rescue!
+    # else
+    #   puts 'not sure'
+    # end
   end
 end
