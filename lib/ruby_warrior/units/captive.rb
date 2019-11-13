@@ -4,13 +4,13 @@ module RubyWarrior
       def initialize
         bind
       end
-      
+
       def max_health
         1
       end
-      
+
       def character
-        "C"
+        'C'
       end
     end
   end

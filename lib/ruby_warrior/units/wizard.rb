@@ -4,9 +4,9 @@ module RubyWarrior
       def initialize
         add_abilities :shoot!, :look
       end
-      
+
       def play_turn(turn)
-        [:forward, :left, :right].each do |direction|
+        %i[forward left right].each do |direction|
           turn.look(direction).each do |space|
             if space.player?
               turn.shoot!(direction)
@@ -17,17 +17,17 @@ module RubyWarrior
           end
         end
       end
-      
+
       def shoot_power
         11
       end
-      
+
       def max_health
         3
       end
-      
+
       def character
-        "w"
+        'w'
       end
     end
   end
